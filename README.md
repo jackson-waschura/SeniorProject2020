@@ -1,0 +1,16 @@
+# SeniorProject2020
+
+Some resources for open problems in machine learning:
+1. [OpenAI's Requests for Research](https://openai.com/blog/requests-for-research-2/)
+2. [Structured Machine Learning: Ten Problems for the Next Ten Years](http://ai.cs.washington.edu/www/media/papers/domingos07d.pdf)
+
+Recent algorithms work by Professor Anderson:
+1. [The Rankability of Data](https://epubs.siam.org/doi/pdf/10.1137/18M1183595)
+2. [Alignment-Based Topic Extraction Using Word Embedding](http://ceur-ws.org/Vol-2192/ialatecml_paper4.pdf)
+3. [Fastfood Elastic Net: Combining Variable Selection with Kernel Expansion Approximations](https://link.springer.com/chapter/10.1007/978-3-319-51469-7_37)
+
+Some ideas that pop out to me:
+1. Learned Data Augmentation: This is a concept that I've been interested in for a couple years now. I've worked on two projects looking at the question of "can we use unsupervised learning to improve data augmentation?" I think there is a lot of potential for experimental success here, but I would expect it would require significant trial and error. OpenAI links to the following papers as a jumping-off point: [Learning to Compose Domain-Specific Transformations for Data Augmentation](https://arxiv.org/abs/1709.01643), [Data Augmentation Generative Adversarial Networks](https://arxiv.org/abs/1711.04340), [Data Augmentation in Emotion Classification Using Generative Adversarial Networks](https://arxiv.org/abs/1711.00648), [The Effectiveness of Data Augmentation in Image Classification using Deep Learning](http://cs231n.stanford.edu/reports/2017/pdfs/300.pdf), [A Bayesian Data Augmentation Approach for Learning Deep Models](https://arxiv.org/abs/1710.10564), [Learning to Model the Tail](https://papers.nips.cc/paper/7278-learning-to-model-the-tail), [RenderGAN: Generating Realistic Labeled Data](https://arxiv.org/abs/1611.01331), [Dataset Augmentation in Feature Space](https://arxiv.org/abs/1702.05538).
+2. Metric learning (or regressing the "similarity" of two objects): This is an interesting area to me because it seems to underlie so many other methods. [Here](https://www.quora.com/What-are-some-open-problems-in-unsupervised-learning-clustering) is a good articulation of what I mean. Clustering methods and many other kinds of machine learning methods require some "distance" function to determine similarity/dissimilarity of observations. Usually, we either choose euclidean distance for simplicity, or we take a shotgun approach and try a bunch of potential distance metrics. Attempting to learn / adapt our distance metric according to some inherent structure in the data sounds like a really interesting and impactful area of research.
+3. Statistical Prediate Invention (or Learning Disentangled Representations): This is another area that I've been watching with interest. The idea here is to try to tease apart independent sources of variation from your data (and usually with the assumption that these independent sources of variation are interpretable).
+4. Learning to Debug Programs: This is an idea that I think would be fascinating to work on, but I haven't read the literature on the subject, so I can't say at this time whether it would be fruitful.
